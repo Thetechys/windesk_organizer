@@ -6,7 +6,10 @@ import shutil
 
 #get user home path
 org_path = os.path.expanduser('~' + '\\Desktop\\')
-typelookup = ['png', 'jpg', 'jpeg', 'pdf'] #append all types(extension) that needed to be organized
+typelookup = ['.png', '.jpg', '.jpeg', '.pdf'] #append all types(extension) that needed to be organized
+# when inputting file types, the '.' (dot) separator is needed.
+# otherwise windesk_organizer will mistook those folders end with certain names as candidates to be
+# organized.
 
 
 class organizer:
